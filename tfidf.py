@@ -4,6 +4,7 @@ Created on Tue May  8 13:50:34 2018
 
 @author: Veronica Schmidt
 """
+import math
 
 def wordCount(word, word_list):
     return word_list.count(word)
