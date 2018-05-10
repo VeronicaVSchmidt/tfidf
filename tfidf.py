@@ -23,7 +23,7 @@ def tfidf(word, word_list, list_of_word_lists):
 
 def getTopWords(word_list, list_of_word_lists, num):
     scores = {word: tfidf(word, word_list, list_of_word_lists) for word in word_list}
-    sorted_words = dict(sorted(scores.items(), key=lambda x: x[1], reverse=True)[:num])
+    sorted_words = dict(sorted(scores.items(), key=lambda x: x[1], reverse=True)[:num]
     return sorted_words
 
 def getWordScore(word_list, list_of_word_lists, score):
