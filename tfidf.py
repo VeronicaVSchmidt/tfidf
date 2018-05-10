@@ -31,5 +31,5 @@ def getWordByScore(word_list, list_of_word_lists, score):
     for word in word_list:
         t = tfidf(word, word_list, list_of_word_lists)
         if t >=score:
-           wl.append(t)
+           wl.append(word)
     return wl
