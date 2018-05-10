@@ -29,7 +29,7 @@ def getTopWords(word_list, list_of_word_lists, num):
 def getWordByScore(word_list, list_of_word_lists, score):
     wl = []
     for word in word_list:
-        t = tfidf.word(word, word_list, list_of_word_lists)
+        t = tfidf(word, word_list, list_of_word_lists)
         if t >=score:
            wl.append(t)
     return wl
